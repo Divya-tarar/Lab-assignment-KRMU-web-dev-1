@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CityNest Real Estate | Find Your Dream Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <span class="nav__logo-icon">🏙️</span>
+                <span class="nav__logo-text">PrimeHomes</span>
+            </div>
+
+            <ul class="nav__links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+
+            <a href="#contact" class="nav__cta">Talk to an Agent</a>
+        </nav>
+    </header>
+
+    <!-- Main content wrapper -->
+    <main id="main-content">
+
+        <!-- ================= HERO SECTION ================= -->
+        <section id="hero" class="hero">
+            <div class="hero__text">
+                <p class="hero__eyebrow">Premium Real Estate Listings</p>
+                <h1 class="hero__title">
+                    Find your <span>next home</span> with confidence.
+                </h1>
+                <p class="hero__subtitle">
+                    Browse verified apartments, villas and studios in top neighbourhoods.
+                    Trusted by thousands of families and working professionals.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#listings" class="btn btn--primary">Browse Listings</a>
+                    <a href="#contact" class="btn btn--outline">Schedule a Call</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">1,200+</span>
+                        <span class="hero__stat-label">Active Listings</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">95%</span>
+                        <span class="hero__stat-label">Happy Clients</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">24/7</span>
+                        <span class="hero__stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__card">
+                <h2 class="hero__card-title">Featured Property</h2>
+                <div class="hero__card-body">
+                    <img src="images/featured-property.jpg.jpg" alt="Modern apartment with large windows" class="hero__card-image">
+                    <h3 class="hero__card-property-title">3BHK Modern Apartment</h3>
+                    <p class="hero__card-location">Bandra West, Mumbai</p>
+                    <p class="hero__card-price">₹ 2.3 Cr</p>
+                    <p class="hero__card-meta">6 Beds • 6 Baths • 3,450 sq ft</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FILTER BAR ================= -->
+        <section class="filters" aria-label="Property filters">
+            <h2 class="filters__title">Filter properties</h2>
+            <form class="filters__form">
+                <div class="filters__group">
+                    <label for="keywords">Search</label>
+                    <input id="keyword" name="keywords" type="text" placeholder="Area, landmark or project name ">
+                </div>
+
+                <div class="filters__group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location">
+                        <option value="">Any</option>
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                        <option>Delhi</option>
+                        <option>Bengaluru</option>
+                    </select>
+                </div>
+
+                <div class="filters__group">
+                    <label for="type">Property Type</label>
+                    <select id="type" name="type">
+                        <option value="">Any</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                        <option>Studio</option>
+                    </select>
+                </div>
+
+                <div class="filters__group">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms">
+                        <option value="">Any</option>
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+
+                <div class="filters__group filters__group--button">
+                    <button type="submit" class="btn btn--primary">Search</button>
+                </div>
+            </form>
+        </section>
+                <!-- ================= STATS COUNTER ================= -->
+        <section class="stats">
+            <div class="stats__item">
+                <span class="stats__number">1,200+</span>
+                <span class="stats__label">Active Listings</span>
+            </div>
+            <div class="stats__item">
+                <span class="stats__number">850+</span>
+                <span class="stats__label">Families Helped</span>
+            </div>
+            <div class="stats__item">
+                <span class="stats__number">50+</span>
+                <span class="stats__label">Expert Agents</span>
+            </div>
+            <div class="stats__item">
+                <span class="stats__number">10+</span>
+                <span class="stats__label">Cities Covered</span>
+            </div>
+        </section>
+
+
+
+        <!-- ================= PROPERTY LISTINGS ================= -->
+        <section id="listings" class="listings">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Featured Listings</h2>
+                    <p class="section-subtitle">
+                        Handpicked properties in prime locations, ready to move in.
+                    </p>
+                </div>
+            </header>
+
+            <div class="listings__grid">
+                <!-- CARD 1 -->
+                <article class="property-card">
+                    <img src="images/house1.jpg.jpg" alt="Spacious 3BHK apartment in Bandra West" class="property-card__image">
+                    <div class="property-card__body">
+                        <h3 class="property-card__title">3BHK Sea-facing Apartment</h3>
+                        <p class="property-card__location">Bandra West, Mumbai</p>
+                        <p class="property-card__price">₹ 2.5 Cr</p>
+                        <p class="property-card__details">3 Beds • 3 Baths • 2,600 sq ft</p>
+                        <button type="button" class="property-card_button">View Details</button>
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="property-card">
+                    <img src="images/house2.jpg.jpg" alt="Modern 2BHK apartment in Powai" class="property-card__image">
+                    <div class="property-card__body">
+                        <h3 class="property-card__title">2BHK Lakeview Apartment</h3>
+                        <p class="property-card__location">Powai, Mumbai</p>
+                        <p class="property-card__price">₹ 1.4 Cr</p>
+                        <p class="property-card__details">2 Beds • 2 Baths • 1,050 sq ft</p>
+                        <button type="button" class="property-card__button">View Details</button>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="property-card">
+                    <img src="images/house3.jpg.jpg" alt="Luxury villa with garden in Pune" class="property-card__image">
+                    <div class="property-card__body">
+                        <h3 class="property-card__title">Luxury 4BHK Villa</h3>
+                        <p class="property-card__location">Koregaon Park, Pune</p>
+                        <p class="property-card__price">₹ 3.9 Cr</p>
+                        <p class="property-card__details">3 Beds • 3 Baths • 2,200 sq ft</p>
+                        <button type="button" class="property-card__button">View Details</button>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="property-card">
+                    <img src="images/appartment1.jpg.jpg" alt="Compact studio apartment in Bengaluru" class="property-card__image">
+                    <div class="property-card__body">
+                        <h3 class="property-card__title">Furnished Studio Apartment</h3>
+                        <p class="property-card__location">Indiranagar, Bengaluru</p>
+                        <p class="property-card__price">₹ 32,000 / month</p>
+                        <p class="property-card__details">4 Bed •4 Bath • 3,200 sq ft</p>
+                        <button type="button" class="property-card__button">View Details</button>
+                    </div>
+                </article>
+
+                <!-- CARD 5 -->
+                <article class="property-card">
+                    <img src="images/appartment2.jpg.jpg" alt="Cozy 1BHK apartment in Delhi" class="property-card__image">
+                    <div class="property-card__body">
+                        <h3 class="property-card__title">Cozy 5BHK Apartment</h3>
+                        <p class="property-card__location">South Delhi</p>
+                        <p class="property-card__price">₹ 3.5 Cr</p>
+                        <p class="property-card__details">5 Bed • 5 Bath • 4,000 sq ft</p>
+                        <button type="button" class="property-card__button">View Details</button>
+                    </div>
+                </article>
+
+                <!-- CARD 6 -->
+                <article class="property-card">
+                    <img src="images/villa1.jpg.jpg" alt="Premium villa with pool" class="property-card__image">
+                    <div class="property-card__body">
+                        <h3 class="property-card__title">Premium 3BHK Villa with Pool</h3>
+                        <p class="property-card__location">Whitefield, Bengaluru</p>
+                        <p class="property-card__price">₹50,000/month</p>
+                        <p class="property-card__details">3 Beds • 3 Baths • 1,900 sq ft</p>
+                        <button type="button" class="property-card__button">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+                <!-- ================= PROPERTY DETAIL PREVIEW ================= -->
+        <section id="property-detail" class="property-detail">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Property Detail Preview</h2>
+                    <p class="section-subtitle">
+                        Take a closer look at one of our most popular homes on the platform.
+                    </p>
+                </div>
+            </header>
+
+            <div class="property-detail__layout">
+                <div class="property-detail__image-wrap">
+                    <img src="images/featured-property.jpg.jpg" alt="Spacious 3BHK apartment living room with large windows">
+                </div>
+                <div class="property-detail__content">
+                    <h3>3BHK Modern Apartment – Bandra West, Mumbai</h3>
+                    <p class="property-detail__price">₹ 2.3 Cr</p>
+                    <p class="property-detail__meta">3 Beds • 2 Baths • 1,450 sq ft • Sea-facing</p>
+                    <p>
+                        Located in a premium gated community with 24x7 security, covered parking and a
+                        private balcony with sea view. Close to schools, hospitals .
+                    </p>
+                    <p>
+                        Ideal for families looking for a modern, ready-to-move-in home in one of Mumbai's
+                        most sought-after neighbourhoods.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= POPULAR AREAS ================= -->
+        <section id="popular-areas" class="popular">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Popular Areas</h2>
+                    <p class="section-subtitle">
+                        Explore neighbourhoods loved by families and working professionals.
+                    </p>
+                </div>
+            </header>
+
+            <div class="popular__grid">
+                <article class="popular-card">
+                    <h3 class="popular-card__title">Bandra West</h3>
+                    <p class="popular-card__text">
+                        Premium sea-facing apartments, cafes and excellent connectivity.
+                    </p>
+                </article>
+
+                <article class="popular-card">
+                    <h3 class="popular-card__title">Powai</h3>
+                    <p class="popular-card__text">
+                        Lakeside view, tech parks nearby and modern gated communities.
+                    </p>
+                </article>
+
+                <article class="popular-card">
+                    <h3 class="popular-card__title">Indiranagar</h3>
+                    <p class="popular-card__text">
+                        Vibrant nightlife, eateries and well-connected to IT hubs.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section id="why-us" class="why-us">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Why choose CityNest?</h2>
+                    <p class="section-subtitle">
+                        We make your home-buying journey simple, transparent and safe.
+                    </p>
+                </div>
+            </header>
+
+            <div class="why-us__grid">
+                <article class="why-card">
+                    <h3 class="why-card__title">Verified Listings</h3>
+                    <p class="why-card__text">
+                        Every property is verified by our on-ground team for accuracy and safety.
+                    </p>
+                </article>
+
+                <article class="why-card">
+                    <h3 class="why-card__title">Expert Guidance</h3>
+                    <p class="why-card__text">
+                        Our experienced agents help you with site visits, negotiation and paperwork.
+                    </p>
+                </article>
+
+                <article class="why-card">
+                    <h3 class="why-card__title">Smart Recommendations</h3>
+                    <p class="why-card__text">
+                        Get personalised property suggestions based on your budget and preferences.
+                    </p>
+                </article>
+            </div>
+        </section>
+                <!-- ================= OUR AGENTS ================= -->
+        <section id="agents" class="agents">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Our Top Agents</h2>
+                    <p class="section-subtitle">
+                        Experienced local experts to guide you through every step of buying your home.
+                    </p>
+                </div>
+            </header>
+
+            <div class="agents__grid">
+                <!-- Agent 1 -->
+                <article class="agent-card">
+                    <img src="images/agent1.jpg.jpg" alt="Photo of agent Aditi Sharma" class="agent-card__photo">
+                    <h3 class="agent-card__name">Aditi Sharma</h3>
+                    <p class="agent-card__role">Senior Property Consultant • Mumbai</p>
+                    <p class="agent-card__quote">
+                        “I help families find homes that match both their budget and lifestyle.”
+                    </p>
+                </article>
+
+                <!-- Agent 2 -->
+                <article class="agent-card">
+                    <img src="images/agent2.jpg.jpg" alt="Photo of agent Rahul Mehta" class="agent-card__photo">
+                    <h3 class="agent-card__name">Rahul Mehta</h3>
+                    <p class="agent-card__role">Luxury Homes Specialist • Pune</p>
+                    <p class="agent-card__quote">
+                        “From site visits to negotiation, I make the process smooth and transparent.”
+                    </p>
+                </article>
+
+                <!-- Agent 3 -->
+                <article class="agent-card">
+                    <img src="images/agent3.jpg.jpg" alt="Photo of agent Neha Verma" class="agent-card__photo">
+                    <h3 class="agent-card__name">Neha Verma</h3>
+                    <p class="agent-card__role">Rental Expert • Bengaluru</p>
+                    <p class="agent-card__quote">
+                        “I focus on safe, well-connected properties for working professionals.”
+                    </p>
+                </article>
+            </div>
+        </section>
+                <!-- ================= BLOG PREVIEWS ================= -->
+        <section id="blog" class="blog">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Latest from our blog</h2>
+                    <p class="section-subtitle">
+                        Stay updated with market trends, investment tips, and home-buying guides.
+                    </p>
+                </div>
+            </header>
+
+            <div class="blog__grid">
+                <article class="blog-card">
+                    <img src="images/blog1.jpg.jpg" alt="Couple discussing property plans" class="blog-card__image">
+                    <h3 class="blog-card__title">5 Things to Check Before Buying an Apartment</h3>
+                    <p class="blog-card__text">
+                        From legal documents to location checks, here is a simple checklist to make your purchase safer.
+                    </p>
+                    <a href="#" class="blog-card__link">Read more</a>
+                </article>
+
+                <article class="blog-card">
+                    <img src="images/blog2.jpg.jpg" alt="City skyline with modern apartments" class="blog-card__image">
+                    <h3 class="blog-card__title">Top 3 Upcoming Neighbourhoods in Your City</h3>
+                    <p class="blog-card__text">
+                        Discover areas that offer better returns, connectivity, and quality of life.
+                    </p>
+                    <a href="#" class="blog-card__link">Read more</a>
+                </article>
+
+                <article class="blog-card">
+                    <img src="images/blog3.jpg.jpg" alt="Real estate agent showing a house" class="blog-card__image">
+                    <h3 class="blog-card__title">Rent vs Buy – What Should You Choose?</h3>
+                    <p class="blog-card__text">
+                        A simple breakdown of pros and cons to help you make the right decision.
+                    </p>
+                    <a href="#" class="blog-card__link">Read more</a>
+                </article>
+            </div>
+        </section>
+                <!-- ================= NEWSLETTER SIGNUP ================= -->
+        <section id="newsletter" class="newsletter">
+            <div class="newsletter__content">
+                <h2>Stay updated with new listings</h2>
+                <p>Get weekly emails with handpicked properties and market insights.</p>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <!-- ================= CONTACT FORM ================= -->
+        <section id="contact" class="contact">
+            <header class="section-header">
+                <div>
+                    <h2 class="section-title">Tell us what you're looking for</h2>
+                    <p class="section-subtitle">
+                        Share your requirements and our team will get back to you within 24 hours.
+                    </p>
+                </div>
+            </header>
+
+            <div class="contact__layout">
+                <form class="contact__form">
+                    <div class="form__group">
+                        <label for="name">Full Name</label>
+                        <input id="name" name="name" type="text" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="city">Preferred City</label>
+                        <input id="city" name="city" type="text" placeholder="e.g., Mumbai, Pune, Delhi">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="budget-range">Budget Range</label>
+                        <select id="budget-range" name="budget-range">
+                            <option value="">Select budget range</option>
+                            <option>Under ₹50L</option>
+                            <option>₹50L – ₹1Cr</option>
+                            <option>₹1Cr – ₹2Cr</option>
+                            <option>₹2Cr+</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group form__group--full">
+                        <label for="message">Tell us more</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Property type, number of bedrooms, location preferences, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Submit Requirements</button>
+                </form>
+
+                <aside class="contact__info">
+                    <h3>Need quick assistance?</h3>
+                    <p>Call us or drop a message, our team is ready to help.</p>
+                    <ul>
+                        <li><strong>Phone:</strong> +91-98765-43210</li>
+                        <li><strong>Email:</strong> hello@citynest.in</li>
+                        <li><strong>Office:</strong> BKC, Mumbai</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <span class="footer__logo">CityNest</span>
+                <p class="footer__text">
+                    Making home buying simple, transparent and stress-free.
+                </p>
+            </div>
+
+            <div class="footer__links">
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#why-us">About</a></li>
+                        <li><a href="#agents">Agents</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__bottom">
+            © 2025 CityNest Real Estate. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
