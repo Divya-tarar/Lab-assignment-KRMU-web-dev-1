@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Divya Tarar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo__mark">&lt;/&gt;</span>
+        <span class="logo__text">Divya</span>
+      </div>
+
+      <nav class="nav__menu">
+        <ul class="nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--small">Hire Me</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__tag">Hello, I'm</p>
+          <h1 class="hero__title">
+             <span>Divya</span>
+          </h1>
+          <p class="hero__role">
+            <span class="hero__role-text">Web Development Student</span>
+          </p>
+          <p class="hero__text">
+            I am a first-year engineering student learning HTML, CSS and basic JavaScript.
+            I like designing clean, simple UIs and building responsive web pages as part
+            of my web development course.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrap">
+          <div class="hero__image-circle">
+            <img
+              src="image/Divya.jpg.jpeg"
+              alt="Profile photo of Divya"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__subtitle">
+          </p>
+        </header>
+
+        <div class="about__content">
+          <p>
+            I am a first-year engineering student with a strong interest in web
+            development and frontend technologies. I enjoy building responsive
+            layouts, experimenting with CSS, and learning how to create
+            user-friendly interfaces.
+          </p>
+          <p>
+            My current focus is on improving my HTML, CSS, and JavaScript
+            skills, and exploring tools like GitHub to share my work. In the
+            future, I am interested in exploring online marketing in future and
+            plan to learn more about it as i grow.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section skills">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">
+            Technologies and concepts I am currently learning and using.
+          </p>
+        </header>
+
+        <div class="skills__grid">
+          <article class="skill-card">
+            <h3>HTML5</h3>
+            <p>Semantic structure, forms, accessibility basics.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, responsive layouts, animations.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>JavaScript (Basics)</h3>
+            <p>Variables, functions, simple logic.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Git &amp; GitHub</h3>
+            <p>Version control, repositories, pushing projects.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Responsive Design</h3>
+            <p>Media queries, mobile-first layouts.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Soft Skills</h3>
+            <p>Problem solving, consistency, willingness to learn.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">
+            A few simple projects and practice layouts I have worked on.
+          </p>
+        </header>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <h3>Real Estate Landing Page</h3>
+            <p>
+              A responsive real estate landing page built as a capstone project using Flexbox, Grid .
+            </p>
+            <span class="project-card__tag">HTML • CSS</span>
+          </article>
+
+          <article class="project-card">
+            <h3>Portfolio website</h3>
+            <p>
+              My personal portfolio layout created for my web development assignment, showcasing my skills and contact detsils .            
+            </p>
+            <span class="project-card__tag">HTML • CSS</span>
+          </article>
+
+          <article class="project-card">
+            <h3>Simple Landing Page</h3>
+            <p>
+              A clean one-page layout built to practice typography and spacing.
+            </p>
+            <span class="project-card__tag">Responsive Design</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__subtitle">
+            Have a project idea or want to connect? Send me a message.
+          </p>
+        </header>
+
+        <div class="contact__layout">
+          <form class="contact__form">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">
+              Send Message
+            </button>
+          </form>
+
+          <aside class="contact__info">
+            <h3>More ways to reach me</h3>
+            <p>Email: divyatarar74@gmail.com</p>
+            <p>Location: Gurugram, India</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 Divya. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#home">Back to top</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
